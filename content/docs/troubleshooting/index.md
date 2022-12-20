@@ -20,4 +20,6 @@ weight: 100
 2. Try re-downloading the mod:
    - You may have downloaded a broken version, and hopefully a patch will have been released.
    - Download the latest version from [here](https://github.com/TGA-Modding/TGAPI/releases/latest)
-3. Ask in the [discord server](https://discord.gg/rENUEg3MT5) for support
+
+
+#### If you can't fix the issue with these steps, ask in the [discord server](https://discord.gg/rENUEg3MT5) for support
