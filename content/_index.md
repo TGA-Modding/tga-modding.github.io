@@ -8,3 +8,7 @@ The home for all mods and retextures of the game The Glitched Attraction
 See the discord here:
 
 {{< discord >}}
+
+See available mods here:
+
+{{< modindex >}}

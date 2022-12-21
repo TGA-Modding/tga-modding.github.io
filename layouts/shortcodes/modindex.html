@@ -1,0 +1,19 @@
+<div id="modindex-frame"></div>
+<script>
+    fetch("https://tga-mod-index.onrender.com")
+        .then(res => res.json().then(json => {
+            console.log(json)
+            var d = document.getElementById("modindex-frame")
+            json.mods.forEach(mod => {
+                fetch("https://tga-mod-index.onrender.com/mod/" + mod.file).then(body2 => body2.json().then(json2 => {
+                    console.log(json2)
+                    let el = document.createElement("a")
+                    el.innerText = `${mod.name} v${json2.version} by ${json2.author}${json2.indev ? " (in development)" : ""}`
+                    el.href = json2.repo
+                    el.target = "_blank"
+                    d.appendChild(el)
+                }))
+            })
+        }))
+</script>
+<br/>
